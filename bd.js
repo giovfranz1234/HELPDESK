@@ -3,12 +3,13 @@
  const pg = require('knex')({
   client: 'pg',
   connection: {
-    host : 'localhost',
+    host : '127.0.0.1',
     user : 'postgres',
     password : 'qwerty',
-    database : 'postgres'
+    database : 'HELPDESK',
+    port:'5432'
   },
-   pool :{min:2, max:8}
+   pool :{min:3, max:8}
 });
 
  

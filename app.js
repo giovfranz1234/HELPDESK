@@ -14,7 +14,7 @@ app.use(express.json());
 var appRutas = require('./rutas/app');
 //var appRUpdate = require('./rutas/update');
 
-app.use('/main',appRutas);
+app.use('/usuario',appRutas);
 //pp.use('/update',appRUpdate);
 
 //escuchar  peticones

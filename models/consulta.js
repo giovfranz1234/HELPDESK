@@ -1,4 +1,4 @@
-const pg = require ('../bd')
+const pg = require ('../bd');
 
 async function getUsuarios(){
     
@@ -6,8 +6,8 @@ async function getUsuarios(){
     var result = await pg('usuarios').select('*')
     return result;
     }
-    catch{
-        throw(error); 
+    catch (error){
+        throw error; 
     }
 
 }
